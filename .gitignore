@@ -164,3 +164,6 @@ client/.next/
 client/node_modules/
 server/api/node_modules/
 .vs/
+
+server/dotnet-api/ChatBot/bin/
+server/dotnet-api/ChatBot/obj/

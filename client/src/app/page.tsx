@@ -9,7 +9,7 @@ interface IMessage {
   sender: 'user' | 'bot';
 }
 
-const apiUrl = 'http://localhost:5000/chat';
+const apiUrl: string = process.env.API_URL || 'http://localhost:5000/api/chat';
 
 const Chat: React.FC = () => {
 

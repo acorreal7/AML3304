@@ -8,8 +8,6 @@ const port = process.env.PORT || 5000;
 const apiUrl = process.env.API_URL;
 const apiKey = process.env.API_KEY;
 
-console.log(apiUrl, apiKey);
-
 app.use(cors());
 app.use(bodyParser.json());
 

@@ -40,40 +40,39 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ### Front
 
 ``` bash
-docker build -t "capstone-project-front" . --tag=capstone-project-front:1.0.0
+docker build -t "aml3304-front" . --tag=aml3304-front:1.0.0
 ```
 
 ``` bash
-docker create --name=capstone-project-front -p 3000:3000 capstone-project-front:1.0.0
+docker create --name=aml3304-front -p 3000:3000 aml3304-front:1.0.0
 ```
 
 ``` bash
-
-docker tag capstone-project-front:1.0.0 container-registry.azurecr.io/capstone-project-front:1.0.0
+docker tag aml3304-front:1.0.0 container-registry-name.azurecr.io/aml3304-front:1.0.0
 ```
 
 ``` bash
-az acr login --name container-registry
-docker push container-registry.azurecr.io/capstone-project-front:1.0.0
+az acr login --name container-registry-name
+docker push container-registry-name.azurecr.io/aml3304-front:1.0.0
 ```
 
 
 ### API
 
 ``` bash
-docker build -t "capstone-project-back" . --tag=capstone-project-back:1.0.0
+docker build -t "aml3304-back" . --tag=aml3304-back:1.0.0
 ```
 
 ``` bash
-docker create --name=capstone-project-back -p 5000:5000 capstone-project-back:1.0.0
+docker create --name=aml3304-back -p 5000:5000 aml3304-back:1.0.0
 ```
 
 ``` bash
 
-docker tag capstone-project-back:1.0.0 container-registry.azurecr.io/capstone-project-back:1.0.0
+docker tag aml3304-back:1.0.0 container-registry-name.azurecr.io/aml3304-back:1.0.0
 ```
 
 ``` bash
-az acr login --name container-registry
-docker push container-registry.azurecr.io/capstone-project-back:1.0.0
+az acr login --name container-registry-name
+docker push container-registry-name.azurecr.io/aml3304-back:1.0.0
 ```
